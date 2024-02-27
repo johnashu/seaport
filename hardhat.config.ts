@@ -16,6 +16,8 @@ import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 
+const PK = process.env.PK;
+
 // Filter Reference Contracts
 subtask(TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS).setAction(
   async (_, __, runSuper) => {
@@ -132,6 +134,22 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
+    hedera: {
+      chainId: 296, // Hedera testnet
+      url: "https://testnet.hashio.io/api/",
+      accounts: [PK],
+      timeout: 2000000,
+
+      allowUnlimitedContractSize: true,
+    },
+    serv: {
+      chainId: 43970, // SERV testnet
+      url: "https://rpc-testnet.serv.services",
+      accounts: [PK],
+      // timeout: 20000000,
+
+      allowUnlimitedContractSize: true,
+    },
     hardhat: {
       blockGasLimit: 30_000_000,
       throwOnCallFailures: false,

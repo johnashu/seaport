@@ -1,0 +1,54 @@
+{
+    "order": {
+        "parameters": {
+            "offerer": "0xa8ED7E2D50A0C23398B6a97fB8ae2a6e115c4264",
+            "zone": "0x0000000000000000000000000000000000000000",
+            "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "startTime": "1704749411",
+            "endTime": 1704752973,
+            "orderType": 0,
+            "offer": [
+                {
+                    "itemType": 0,
+                    "token": "0x0000000000000000000000000000000000000000",
+                    "identifierOrCriteria": "0",
+                    "startAmount": "100000000000000",
+                    "endAmount": "100000000000000"
+                }
+            ],
+            "consideration": [
+                {
+                    "itemType": 2,
+                    "token": "0x3cbeafb3e1064d29d38e5afdb3bbd5237597ec4b",
+                    "identifierOrCriteria": "1",
+                    "startAmount": "1",
+                    "endAmount": "1",
+                    "recipient": "0xa8ED7E2D50A0C23398B6a97fB8ae2a6e115c4264"
+                },
+                {
+                    "itemType": 0,
+                    "token": "0x0000000000000000000000000000000000000000",
+                    "identifierOrCriteria": "0",
+                    "startAmount": "2500000000000",
+                    "endAmount": "2500000000000",
+                    "recipient": "0xe1fe7A4DBF33e6dA8c9e2628d102c67FB9E94549"
+                },
+                {
+                    "itemType": 0,
+                    "token": "0x0000000000000000000000000000000000000000",
+                    "identifierOrCriteria": "0",
+                    "startAmount": "10000000000000",
+                    "endAmount": "10000000000000",
+                    "recipient": "0x0D609c61fc870D495ACC1c7d0dd3C882af88fa41"
+                }
+            ],
+            "totalOriginalConsiderationItems": 3,
+            "salt": "0x000000000000000000000000000000000000000000000000b5020cc2bc8ddd40",
+            "conduitKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "counter": "0"
+        },
+        "signature": "0x00f1bf22b1d0b37a3f6b458ed18a896da9f7d91070e4fe313c41843f9f74deafa1b6e48d85ddbf2cd0076a3421ec0eaa9a36cda80141bca7e05ce673a4a62cb7"
+    },
+    "type": "offer",
+    "user_id": 11
+}
